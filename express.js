@@ -1,55 +1,6 @@
 const express =require("express")
 const app= express()
 
-app.get("/", function(request,response)
-{
-    console.log("Peticion recibida por el cliente")
-    console.log(request.url)
-    console.log(request.method)
-    console.log(request.headers["user-agent"])
-    const text = {
-        ok:true,
-        message:"Recibido"
-    }
-    response.json(text)
-})
- 
-app.post("/", function(request,response)
-{
-    console.log("Peticion recibida por el cliente")
-    console.log(request.url)
-    console.log(request.method)
-    console.log(request.headers["user-agent"])
-    const text = {
-        ok:true,
-        message:"Recibido"
-    }
-    response.json(text)
-})
-app.put("/", function(request,response)
-{
-    console.log("Peticion recibida por el cliente")
-    console.log("URL: "+ request.url)
-    console.log("Method: " + request.method)
-    console.log("User Agent: " + request.headers["user-agent"])
-    const text = {
-        ok:true,
-        message:"Recibido"
-    }
-    response.json(text)
-})
-app.delete("/", function(request,response)
-{
-    console.log("Peticion recibida por el cliente")
-    console.log(request.url)
-    console.log(request.method)
-    console.log(request.headers["user-agent"])
-    const text = {
-        ok:true,
-        message:"Recibido"
-    }
-    response.json(text)
-})
 
 app.get('/bye', function (req, res) {
     console.log("Peticion recibida por el cliente")
